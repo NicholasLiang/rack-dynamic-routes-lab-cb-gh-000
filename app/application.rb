@@ -12,10 +12,9 @@ class Application
       item = @@items.find{|item| item.name == item_name}
       resp.write item.nil? ? "Item not found" : item.price
       status 400
-      
     else
       resp.write "Route not found"
-      status 400
+      status 404
     end
     
     resp.finish
