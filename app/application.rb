@@ -13,7 +13,7 @@ class Application
       resp.write item.nil? ? "Item not found" : item.price
     else
       resp.write "Route not found"
-      status 404
+      resp.status = 404
     end
     
     resp.finish
