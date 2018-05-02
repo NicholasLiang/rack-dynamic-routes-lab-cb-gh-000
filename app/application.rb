@@ -6,6 +6,8 @@ class Application
     
     if req.path.match(/items/)
       
+      item_price = 
+      
     end
     
     resp.finish
