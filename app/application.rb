@@ -13,7 +13,6 @@ class Application
       resp.write item.nil? ? "Item not found" : item.price
       
     else
-      resp.write 
       resp.write "Route not found"
       status 400
     end
