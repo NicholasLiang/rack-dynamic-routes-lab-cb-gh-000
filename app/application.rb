@@ -8,6 +8,7 @@ class Application
       
       item_price = req.path.split("/items/").last
       
+      
     end
     
     resp.finish
