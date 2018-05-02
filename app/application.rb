@@ -13,7 +13,9 @@ class Application
       if item.nil?
         resp.write "Item not found"
         resp.status = 400
-      resp.write item.nil? ? "Item not found" : item.price
+      else 
+        resp.write item.price
+        resp.status = 200
       
     else
       resp.write "Route not found"
