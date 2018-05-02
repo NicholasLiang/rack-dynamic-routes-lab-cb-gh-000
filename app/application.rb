@@ -10,10 +10,10 @@ class Application
       
       item_name = req.path.split("/items/").last
       item = @@items.find{|item| item.name == item_name}
-      resp.write item.nil? ? item.price
+      resp.write item.nil? ? "Item not found" : item.price
       
     else
-      resp.write "Item not found"
+      resp.write 
       resp.write "Route not found"
       status 400
     end
