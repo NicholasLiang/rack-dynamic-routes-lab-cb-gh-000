@@ -13,7 +13,7 @@ class Application
       resp.write item.price
       
     else
-      
+      resp.write "Route not found"
     end
     
     resp.finish
