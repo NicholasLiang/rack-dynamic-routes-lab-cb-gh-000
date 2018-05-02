@@ -14,7 +14,7 @@ class Application
       
     else
       resp.write "Route not found"
-      state
+      status 
     end
     
     resp.finish
