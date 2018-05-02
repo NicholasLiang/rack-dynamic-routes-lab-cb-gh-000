@@ -6,7 +6,7 @@ class Application
     
     if req.path.match(/items/)
       
-      item_price = 
+      item_price = req.path.split("/items/").last
       
     end
     
